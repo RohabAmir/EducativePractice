@@ -9,10 +9,17 @@ def homepage():
     return render_template("home.html")
 
 
-@app.route("/About")
+@app.route("/Info")
 def about():
-    """View function for About Page."""
-    return render_template("about.html")
+    """View function for Info Page."""
+    return render_template("info.html")
+
+@app.route("/Contact")
+def contact():
+    """View function for Contact Page."""
+    return render_template("contact.html")
+
+
 
 
 if __name__ == "__main__":
